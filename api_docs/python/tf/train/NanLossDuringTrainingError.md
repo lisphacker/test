@@ -1,0 +1,45 @@
+<div itemscope itemtype="http://developers.google.com/ReferenceObject">
+<meta itemprop="name" content="tf.train.NanLossDuringTrainingError" />
+<meta itemprop="path" content="Stable" />
+<meta itemprop="property" content="__init__"/>
+<meta itemprop="property" content="__new__"/>
+</div>
+
+# tf.train.NanLossDuringTrainingError
+
+## Class `NanLossDuringTrainingError`
+
+
+
+### Aliases:
+
+* Class `tf.estimator.NanLossDuringTrainingError`
+* Class `tf.train.NanLossDuringTrainingError`
+
+Unspecified run-time error.
+
+<h2 id="__init__"><code>__init__</code></h2>
+
+``` python
+__init__(
+    *args,
+    **kwargs
+)
+```
+
+
+
+<h2 id="__new__"><code>__new__</code></h2>
+
+``` python
+__new__(
+    type,
+    *args,
+    **kwargs
+)
+```
+
+
+
+
+

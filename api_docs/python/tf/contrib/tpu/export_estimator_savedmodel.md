@@ -1,0 +1,37 @@
+<div itemscope itemtype="http://developers.google.com/ReferenceObject">
+<meta itemprop="name" content="tf.contrib.tpu.export_estimator_savedmodel" />
+<meta itemprop="path" content="Stable" />
+</div>
+
+# tf.contrib.tpu.export_estimator_savedmodel
+
+``` python
+tf.contrib.tpu.export_estimator_savedmodel(
+    estimator,
+    export_dir_base,
+    serving_input_receiver_fn,
+    assets_extra=None,
+    as_text=False,
+    checkpoint_path=None
+)
+```
+
+Export `Estimator` trained model for TPU inference.
+
+#### Args:
+
+* <b>`estimator`</b>: `Estimator` with which model has been trained.
+* <b>`export_dir_base`</b>: A string containing a directory in which to create
+    timestamped subdirectories containing exported SavedModels.
+* <b>`serving_input_receiver_fn`</b>: A function that takes no argument and returns a
+    `ServingInputReceiver` or `TensorServingInputReceiver`.
+* <b>`assets_extra`</b>: A dict specifying how to populate the assets.extra directory
+    within the exported SavedModel, or `None` if no extra assets are needed.
+* <b>`as_text`</b>: whether to write the SavedModel proto in text format.
+* <b>`checkpoint_path`</b>: The checkpoint path to export.  If `None` (the default),
+    the most recent checkpoint found within the model directory is chosen.
+
+
+#### Returns:
+
+The string path to the exported directory.

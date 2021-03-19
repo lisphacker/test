@@ -1,0 +1,36 @@
+<div itemscope itemtype="http://developers.google.com/ReferenceObject">
+<meta itemprop="name" content="tf.group" />
+<meta itemprop="path" content="Stable" />
+</div>
+
+# tf.group
+
+``` python
+tf.group(
+    *inputs,
+    **kwargs
+)
+```
+
+Create an op that groups multiple operations.
+
+When this op finishes, all ops in `inputs` have finished. This op has no
+output.
+
+See also <a href="../tf/tuple.md"><code>tf.tuple</code></a> and
+<a href="../tf/control_dependencies.md"><code>tf.control_dependencies</code></a>.
+
+#### Args:
+
+* <b>`*inputs`</b>: Zero or more tensors to group.
+* <b>`name`</b>: A name for this operation (optional).
+
+
+#### Returns:
+
+An Operation that executes all its inputs.
+
+
+#### Raises:
+
+* <b>`ValueError`</b>: If an unknown keyword argument is provided.
